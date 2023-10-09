@@ -1,22 +1,15 @@
-
-import { useState } from 'react'
 import './App.css'
-import ParentComponent from './components/ParentComponent'
-import TaskList from './components/TaskList'
+import Card from './components/Card'
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {id: 1, text: "Hacer la compra"},
-    {id: 2, text: "Estudar ReactJs"},
-    {id: 3, text: "Ejercicio de programación"}
-])
+  
   
 
   return (
     <div>
-     {/* <ParentComponent /> */}
-     <h1>Lista de Tareas</h1>
-     <TaskList tasks={tasks} />
+      <h1>Ejemplo de Tarjeta Reutilizable</h1>
+      <Card title="Título de la primer tarjeta" content="Contenido de la primer tarjea"/>
+      <Card title="Título de la segunda tarjeta" content="Contenido de la segunda tarjeta"/>
     </div>
   )
 }

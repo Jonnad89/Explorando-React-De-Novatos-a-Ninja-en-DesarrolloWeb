@@ -18,6 +18,31 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.card{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+  background-color: #fff;
+  color: #000;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover{
+  box-shadow: 0 8px 16px rgba(234, 12, 12, 0.2);
+  color: red;
+}
+
+.card h3{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
