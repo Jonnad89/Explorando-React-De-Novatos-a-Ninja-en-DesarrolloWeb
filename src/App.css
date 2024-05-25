@@ -14,22 +14,20 @@
   padding: 10px;
   color: #fff;
 }
-.about-me {
+
+.bg-green {
   background-color: green;
 }
 
-.hobbies{
-background-color: red;
+.bg-red{
+  background-color: red;
 }
-
-.free-time{
-  background-color: blue;
-}
-
-.card-food{
+.bg-pink{
   background-color: pink;
 }
-
-.card-technologies{
+.bg-blue{
+  background-color: blue;
+}
+.bg-yellow{
   background-color: yellow;
 }
