@@ -1,6 +1,7 @@
 import "./App.css";
 
 import AboutMe from "./components/AboutMe";
+import Bulb from "./components/Bulb";
 import Card from "./components/Card";
 import Counter from "./components/Counter";
 import Food from "./components/Food";
@@ -11,9 +12,10 @@ import Technologies from "./components/Technologies";
 function App() {
   return (
     <div className="App">
-    <Counter />
-
-    {/* crear un texto que diga "estado inicial" y que cuando de click diga "el estado cambio" */}
+      <Bulb />
+      <Bulb />
+      <Bulb />
+      <Bulb />
     </div>
   );
 }
