@@ -7,15 +7,14 @@ import Counter from "./components/Counter";
 import Food from "./components/Food";
 import FreeTime from "./components/FreeTime";
 import Hobbies from "./components/Hobbies";
+import PokemonCard from "./components/PokemonCard";
 import Technologies from "./components/Technologies";
 
 function App() {
   return (
     <div className="App">
-      <Bulb />
-      <Bulb />
-      <Bulb />
-      <Bulb />
+      {/* <Bulb /> */}
+      <PokemonCard />
     </div>
   );
 }

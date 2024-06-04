@@ -41,3 +41,19 @@
 .bg-gray{
   background-color: gray;
 }
+
+.poke-card{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.poke-img{
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  margin: 5px;
+  background-color: antiquewhite;
+  border-radius: 25px;
+}
