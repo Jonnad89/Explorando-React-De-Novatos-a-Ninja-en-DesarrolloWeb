@@ -54,6 +54,9 @@
   height: 200px;
   padding: 5px;
   margin: 5px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   border-radius: 25px;
+  filter: drop-shadow(
+    0 0 10px rgba(247, 122, 5, .8)
+  );
 }

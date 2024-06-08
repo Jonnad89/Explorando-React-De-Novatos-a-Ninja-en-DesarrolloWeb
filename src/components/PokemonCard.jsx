@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import pokemon from "../pokemon.json";
 const PokemonCard = () => {
-  const [index, setIndex] = useState(150);
+  const [index, setIndex] = useState(0);
+
+  const random = Math.floor(Math.random()* pokemon.length)
 
   const next = () => {
     setIndex(index + 1);
@@ -9,7 +11,11 @@ const PokemonCard = () => {
   const prev = () => {
     setIndex(index - 1);
   };
-  console.log(pokemon);
+
+  const changeRandom = () => setIndex(random);
+    console.log(pokemon);
+
+    const first = () => setIndex(0);
   return (
     <div className="poke-card">
       <h1>{pokemon[index].name.english}</h1>
@@ -30,6 +36,8 @@ const PokemonCard = () => {
       </p>
       {index > 0 && <button onClick={prev}>Prev</button>}
       {index < pokemon.length -1 && <button onClick={next}>Next</button>}
+      <button onClick={changeRandom}>Change Pokemon Random</button>
+      <button onClick={first}>First Pokemon</button>
     </div>
   );
 };
