@@ -43,10 +43,15 @@
 }
 
 .poke-card{
-  margin: 0;
-  padding: 0;
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
   display: grid;
-  gap: 5px;
+  gap: 2px;
+  border-radius: 8px;
+  background-color: #242424;
+  box-shadow: 2px 2px 2px rgba(247, 122, 5, .8);
+  justify-content: center;
 }
 
 .poke-img{
@@ -59,4 +64,16 @@
   filter: drop-shadow(
     0 0 10px rgba(247, 122, 5, .8)
   );
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 20px;
+  border: 2px solid rgba(247, 122, 5, .8);
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
 }
