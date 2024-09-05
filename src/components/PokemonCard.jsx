@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import pokemon from "../pokemon.json";
 const PokemonCard = () => {
   const random = Math.floor(Math.random()* pokemon.length)
@@ -13,14 +13,19 @@ const PokemonCard = () => {
   };
 
   const changeRandom = () => setIndex(random);
-    console.log(pokemon);
+    // console.log(pokemon);
 
     const first = () => setIndex(0);
 
    const colors = ["#845ec2", "#d65db1", "#ff6f91", "#ff9671","#ffc75f", "#f9f871"] 
    const randomColorIndex = Math.floor(Math.random() * colors.length)
    const color = colors[randomColorIndex]
-   document.body.style = `background: ${color}`
+
+   useEffect(() => {
+     document.body.style = `background: ${color}`
+     console.log("dentro del useEffect")
+    },[color])
+
   return (
     <div className="poke-card" style={{color: color}}>
       <h1>{pokemon[index].name.english}</h1>
